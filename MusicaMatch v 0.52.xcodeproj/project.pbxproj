@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30230E6519EC23B5007EA3CD /* currentUserProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30230E6419EC23B5007EA3CD /* currentUserProfileController.m */; };
+		302934F119EB17C000796C28 /* Degree.m in Sources */ = {isa = PBXBuildFile; fileRef = 302934F019EB17C000796C28 /* Degree.m */; };
+		30FFA27D19EB32C0006EA614 /* nearMeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FFA27C19EB32C0006EA614 /* nearMeDetails.m */; };
+		BA3AF94C19A0647F00B07BB6 /* musicaMatchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3AF94B19A0647F00B07BB6 /* musicaMatchMainViewController.m */; };
+		BA76328319DB2012008627E5 /* messagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76328219DB2012008627E5 /* messagesTableViewController.m */; };
+		BA775B8F19D8D97400509471 /* homeTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA775B8E19D8D97400509471 /* homeTabController.m */; };
+		BA9D3361194539160089516C /* tableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D3360194539160089516C /* tableViewModel.m */; };
+		BA9D3365194539EB0089516C /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D3364194539EB0089516C /* Users.m */; };
+		BAAC98BA190DEE7F009D2A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98B9190DEE7F009D2A7E /* Foundation.framework */; };
+		BAAC98BC190DEE7F009D2A7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98BB190DEE7F009D2A7E /* CoreGraphics.framework */; };
+		BAAC98BE190DEE7F009D2A7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98BD190DEE7F009D2A7E /* UIKit.framework */; };
+		BAAC98C4190DEE7F009D2A7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAAC98C2190DEE7F009D2A7E /* InfoPlist.strings */; };
+		BAAC98C6190DEE7F009D2A7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAC98C5190DEE7F009D2A7E /* main.m */; };
+		BAAC98CA190DEE7F009D2A7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAC98C9190DEE7F009D2A7E /* AppDelegate.m */; };
+		BAAC98CD190DEE7F009D2A7E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAC98CB190DEE7F009D2A7E /* Main_iPhone.storyboard */; };
+		BAAC98D0190DEE7F009D2A7E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAC98CE190DEE7F009D2A7E /* Main_iPad.storyboard */; };
+		BAAC98D3190DEE7F009D2A7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAC98D2190DEE7F009D2A7E /* ViewController.m */; };
+		BAAC98D5190DEE7F009D2A7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAC98D4190DEE7F009D2A7E /* Images.xcassets */; };
+		BAAC98DC190DEE80009D2A7E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98DB190DEE80009D2A7E /* XCTest.framework */; };
+		BAAC98DD190DEE80009D2A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98B9190DEE7F009D2A7E /* Foundation.framework */; };
+		BAAC98DE190DEE80009D2A7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98BD190DEE7F009D2A7E /* UIKit.framework */; };
+		BAAC98E6190DEE80009D2A7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAAC98E4190DEE80009D2A7E /* InfoPlist.strings */; };
+		BAAC98E8190DEE80009D2A7E /* MusicaMatch_v_0_52Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAC98E7190DEE80009D2A7E /* MusicaMatch_v_0_52Tests.m */; };
+		BAAC98FD190DEEEF009D2A7E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F1190DEEEF009D2A7E /* Accounts.framework */; };
+		BAAC98FE190DEEEF009D2A7E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F2190DEEEF009D2A7E /* AdSupport.framework */; };
+		BAAC98FF190DEEEF009D2A7E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F3190DEEEF009D2A7E /* AudioToolbox.framework */; };
+		BAAC9900190DEEEF009D2A7E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F4190DEEEF009D2A7E /* CFNetwork.framework */; };
+		BAAC9901190DEEEF009D2A7E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F5190DEEEF009D2A7E /* CoreLocation.framework */; };
+		BAAC9902190DEEEF009D2A7E /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F6190DEEEF009D2A7E /* libz.1.1.3.dylib */; };
+		BAAC9903190DEEEF009D2A7E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F7190DEEEF009D2A7E /* MobileCoreServices.framework */; };
+		BAAC9904190DEEEF009D2A7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F8190DEEEF009D2A7E /* QuartzCore.framework */; };
+		BAAC9905190DEEEF009D2A7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98F9190DEEEF009D2A7E /* Security.framework */; };
+		BAAC9906190DEEEF009D2A7E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98FA190DEEEF009D2A7E /* Social.framework */; };
+		BAAC9907190DEEEF009D2A7E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98FB190DEEEF009D2A7E /* StoreKit.framework */; };
+		BAAC9908190DEEEF009D2A7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC98FC190DEEEF009D2A7E /* SystemConfiguration.framework */; };
+		BAAC990C190DEF1C009D2A7E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAAC990B190DEF1C009D2A7E /* FacebookSDK.framework */; };
+		BAAC990F190DEFC8009D2A7E /* preAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAC990E190DEFC8009D2A7E /* preAuthenticationViewController.m */; };
+		BAAC9912190DEFE3009D2A7E /* musicaMatchLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAC9911190DEFE3009D2A7E /* musicaMatchLoginViewController.m */; };
+		BAAC9915190DEFEF009D2A7E /* musicaMatchSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAC9914190DEFEF009D2A7E /* musicaMatchSignupViewController.m */; };
+		BADB457419DB458E00573219 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADB457319DB458E00573219 /* Parse.framework */; };
+		BAE1A48B19D8DFAE009A5958 /* nearMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE1A48A19D8DFAE009A5958 /* nearMeController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAAC98DF190DEE80009D2A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAAC98AE190DEE7F009D2A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAAC98B5190DEE7F009D2A7E;
+			remoteInfo = "MusicaMatch v 0.51";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30230E6319EC23B5007EA3CD /* currentUserProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = currentUserProfileController.h; sourceTree = "<group>"; };
+		30230E6419EC23B5007EA3CD /* currentUserProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentUserProfileController.m; sourceTree = "<group>"; };
+		302934EF19EB17C000796C28 /* Degree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Degree.h; sourceTree = "<group>"; };
+		302934F019EB17C000796C28 /* Degree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Degree.m; sourceTree = "<group>"; };
+		30FFA27B19EB32C0006EA614 /* nearMeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nearMeDetails.h; sourceTree = "<group>"; };
+		30FFA27C19EB32C0006EA614 /* nearMeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nearMeDetails.m; sourceTree = "<group>"; };
+		BA3AF94A19A0647F00B07BB6 /* musicaMatchMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = musicaMatchMainViewController.h; sourceTree = "<group>"; };
+		BA3AF94B19A0647F00B07BB6 /* musicaMatchMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = musicaMatchMainViewController.m; sourceTree = "<group>"; };
+		BA76328119DB2012008627E5 /* messagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messagesTableViewController.h; sourceTree = "<group>"; };
+		BA76328219DB2012008627E5 /* messagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messagesTableViewController.m; sourceTree = "<group>"; };
+		BA775B8D19D8D97400509471 /* homeTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = homeTabController.h; path = ../homeTabController.h; sourceTree = "<group>"; };
+		BA775B8E19D8D97400509471 /* homeTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = homeTabController.m; path = ../homeTabController.m; sourceTree = "<group>"; };
+		BA9D335F194539160089516C /* tableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableViewModel.h; sourceTree = SOURCE_ROOT; };
+		BA9D3360194539160089516C /* tableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableViewModel.m; sourceTree = SOURCE_ROOT; };
+		BA9D3363194539EB0089516C /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = SOURCE_ROOT; };
+		BA9D3364194539EB0089516C /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = SOURCE_ROOT; };
+		BAAC98B6190DEE7F009D2A7E /* MusicaMatch v 0.52.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicaMatch v 0.52.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAC98B9190DEE7F009D2A7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BAAC98BB190DEE7F009D2A7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BAAC98BD190DEE7F009D2A7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BAAC98C1190DEE7F009D2A7E /* MusicaMatch v 0.52-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicaMatch v 0.52-Info.plist"; sourceTree = "<group>"; };
+		BAAC98C3190DEE7F009D2A7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAAC98C5190DEE7F009D2A7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAAC98C7190DEE7F009D2A7E /* MusicaMatch v 0.52-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicaMatch v 0.52-Prefix.pch"; sourceTree = "<group>"; };
+		BAAC98C8190DEE7F009D2A7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAAC98C9190DEE7F009D2A7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAAC98CC190DEE7F009D2A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		BAAC98CF190DEE7F009D2A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		BAAC98D1190DEE7F009D2A7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BAAC98D2190DEE7F009D2A7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BAAC98D4190DEE7F009D2A7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BAAC98DA190DEE80009D2A7E /* MusicaMatch v 0.52Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MusicaMatch v 0.52Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAC98DB190DEE80009D2A7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BAAC98E3190DEE80009D2A7E /* MusicaMatch v 0.52Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicaMatch v 0.52Tests-Info.plist"; sourceTree = "<group>"; };
+		BAAC98E5190DEE80009D2A7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAAC98E7190DEE80009D2A7E /* MusicaMatch_v_0_52Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicaMatch_v_0_52Tests.m; sourceTree = "<group>"; };
+		BAAC98F1190DEEEF009D2A7E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		BAAC98F2190DEEEF009D2A7E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BAAC98F3190DEEEF009D2A7E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BAAC98F4190DEEEF009D2A7E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BAAC98F5190DEEEF009D2A7E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BAAC98F6190DEEEF009D2A7E /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		BAAC98F7190DEEEF009D2A7E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BAAC98F8190DEEEF009D2A7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BAAC98F9190DEEEF009D2A7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BAAC98FA190DEEEF009D2A7E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BAAC98FB190DEEEF009D2A7E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BAAC98FC190DEEEF009D2A7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BAAC9909190DEF11009D2A7E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		BAAC990B190DEF1C009D2A7E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		BAAC990D190DEFC8009D2A7E /* preAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = preAuthenticationViewController.h; sourceTree = "<group>"; };
+		BAAC990E190DEFC8009D2A7E /* preAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = preAuthenticationViewController.m; sourceTree = "<group>"; };
+		BAAC9910190DEFE3009D2A7E /* musicaMatchLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = musicaMatchLoginViewController.h; sourceTree = "<group>"; };
+		BAAC9911190DEFE3009D2A7E /* musicaMatchLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = musicaMatchLoginViewController.m; sourceTree = "<group>"; };
+		BAAC9913190DEFEF009D2A7E /* musicaMatchSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = musicaMatchSignupViewController.h; sourceTree = "<group>"; };
+		BAAC9914190DEFEF009D2A7E /* musicaMatchSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = musicaMatchSignupViewController.m; sourceTree = "<group>"; };
+		BADB457319DB458E00573219 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../parse-library-1.4.1/Parse.framework"; sourceTree = "<group>"; };
+		BAE1A48919D8DFAE009A5958 /* nearMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nearMeController.h; path = ../nearMeController.h; sourceTree = "<group>"; };
+		BAE1A48A19D8DFAE009A5958 /* nearMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = nearMeController.m; path = ../nearMeController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAAC98B3190DEE7F009D2A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADB457419DB458E00573219 /* Parse.framework in Frameworks */,
+				BAAC98FD190DEEEF009D2A7E /* Accounts.framework in Frameworks */,
+				BAAC98FE190DEEEF009D2A7E /* AdSupport.framework in Frameworks */,
+				BAAC98FF190DEEEF009D2A7E /* AudioToolbox.framework in Frameworks */,
+				BAAC9900190DEEEF009D2A7E /* CFNetwork.framework in Frameworks */,
+				BAAC9901190DEEEF009D2A7E /* CoreLocation.framework in Frameworks */,
+				BAAC9902190DEEEF009D2A7E /* libz.1.1.3.dylib in Frameworks */,
+				BAAC9903190DEEEF009D2A7E /* MobileCoreServices.framework in Frameworks */,
+				BAAC990C190DEF1C009D2A7E /* FacebookSDK.framework in Frameworks */,
+				BAAC9904190DEEEF009D2A7E /* QuartzCore.framework in Frameworks */,
+				BAAC9905190DEEEF009D2A7E /* Security.framework in Frameworks */,
+				BAAC9906190DEEEF009D2A7E /* Social.framework in Frameworks */,
+				BAAC9907190DEEEF009D2A7E /* StoreKit.framework in Frameworks */,
+				BAAC9908190DEEEF009D2A7E /* SystemConfiguration.framework in Frameworks */,
+				BAAC98BC190DEE7F009D2A7E /* CoreGraphics.framework in Frameworks */,
+				BAAC98BA190DEE7F009D2A7E /* Foundation.framework in Frameworks */,
+				BAAC98BE190DEE7F009D2A7E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAC98D7190DEE80009D2A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAC98DC190DEE80009D2A7E /* XCTest.framework in Frameworks */,
+				BAAC98DE190DEE80009D2A7E /* UIKit.framework in Frameworks */,
+				BAAC98DD190DEE80009D2A7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30230E6619EC23C9007EA3CD /* currentUserProfileController */ = {
+			isa = PBXGroup;
+			children = (
+				30230E6319EC23B5007EA3CD /* currentUserProfileController.h */,
+				30230E6419EC23B5007EA3CD /* currentUserProfileController.m */,
+			);
+			name = currentUserProfileController;
+			sourceTree = "<group>";
+		};
+		302934F219EB306000796C28 /* NearMe and its Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				BAE1A48919D8DFAE009A5958 /* nearMeController.h */,
+				BAE1A48A19D8DFAE009A5958 /* nearMeController.m */,
+				302934F919EB318B00796C28 /* Details */,
+			);
+			name = "NearMe and its Detail View";
+			sourceTree = "<group>";
+		};
+		302934F319EB307300796C28 /* Messages and its Details */ = {
+			isa = PBXGroup;
+			children = (
+				BA76328119DB2012008627E5 /* messagesTableViewController.h */,
+				BA76328219DB2012008627E5 /* messagesTableViewController.m */,
+			);
+			name = "Messages and its Details";
+			sourceTree = "<group>";
+		};
+		302934F419EB307F00796C28 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA775B8D19D8D97400509471 /* homeTabController.h */,
+				BA775B8E19D8D97400509471 /* homeTabController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		302934F519EB310600796C28 /* musicaMatchController **prep for deletion** */ = {
+			isa = PBXGroup;
+			children = (
+				BA3AF94A19A0647F00B07BB6 /* musicaMatchMainViewController.h */,
+				BA3AF94B19A0647F00B07BB6 /* musicaMatchMainViewController.m */,
+			);
+			name = "musicaMatchController **prep for deletion**";
+			sourceTree = "<group>";
+		};
+		302934F919EB318B00796C28 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				30FFA27B19EB32C0006EA614 /* nearMeDetails.h */,
+				30FFA27C19EB32C0006EA614 /* nearMeDetails.m */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		BA093D2C194A3DB50073D7A9 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				30230E6619EC23C9007EA3CD /* currentUserProfileController */,
+				302934F519EB310600796C28 /* musicaMatchController **prep for deletion** */,
+				302934F419EB307F00796C28 /* Home */,
+				302934F219EB306000796C28 /* NearMe and its Detail View */,
+				302934F319EB307300796C28 /* Messages and its Details */,
+				BAAC98CB190DEE7F009D2A7E /* Main_iPhone.storyboard */,
+				BAAC98CE190DEE7F009D2A7E /* Main_iPad.storyboard */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+		BA9D3362194539BD0089516C /* Main View Models and User Class */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D335F194539160089516C /* tableViewModel.h */,
+				BA9D3360194539160089516C /* tableViewModel.m */,
+				BA9D3363194539EB0089516C /* Users.h */,
+				BA9D3364194539EB0089516C /* Users.m */,
+				302934EF19EB17C000796C28 /* Degree.h */,
+				302934F019EB17C000796C28 /* Degree.m */,
+			);
+			name = "Main View Models and User Class";
+			sourceTree = "<group>";
+		};
+		BAAC98AD190DEE7F009D2A7E = {
+			isa = PBXGroup;
+			children = (
+				BAAC98BF190DEE7F009D2A7E /* MusicaMatch v 0.52 */,
+				BAAC98E1190DEE80009D2A7E /* MusicaMatch v 0.52Tests */,
+				BAAC98B8190DEE7F009D2A7E /* Frameworks */,
+				BAAC98B7190DEE7F009D2A7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAAC98B7190DEE7F009D2A7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAAC98B6190DEE7F009D2A7E /* MusicaMatch v 0.52.app */,
+				BAAC98DA190DEE80009D2A7E /* MusicaMatch v 0.52Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAAC98B8190DEE7F009D2A7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BADB457319DB458E00573219 /* Parse.framework */,
+				BAAC990B190DEF1C009D2A7E /* FacebookSDK.framework */,
+				BAAC9909190DEF11009D2A7E /* Parse.framework */,
+				BAAC98F1190DEEEF009D2A7E /* Accounts.framework */,
+				BAAC98F2190DEEEF009D2A7E /* AdSupport.framework */,
+				BAAC98F3190DEEEF009D2A7E /* AudioToolbox.framework */,
+				BAAC98F4190DEEEF009D2A7E /* CFNetwork.framework */,
+				BAAC98F5190DEEEF009D2A7E /* CoreLocation.framework */,
+				BAAC98F6190DEEEF009D2A7E /* libz.1.1.3.dylib */,
+				BAAC98F7190DEEEF009D2A7E /* MobileCoreServices.framework */,
+				BAAC98F8190DEEEF009D2A7E /* QuartzCore.framework */,
+				BAAC98F9190DEEEF009D2A7E /* Security.framework */,
+				BAAC98FA190DEEEF009D2A7E /* Social.framework */,
+				BAAC98FB190DEEEF009D2A7E /* StoreKit.framework */,
+				BAAC98FC190DEEEF009D2A7E /* SystemConfiguration.framework */,
+				BAAC98B9190DEE7F009D2A7E /* Foundation.framework */,
+				BAAC98BB190DEE7F009D2A7E /* CoreGraphics.framework */,
+				BAAC98BD190DEE7F009D2A7E /* UIKit.framework */,
+				BAAC98DB190DEE80009D2A7E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAAC98BF190DEE7F009D2A7E /* MusicaMatch v 0.52 */ = {
+			isa = PBXGroup;
+			children = (
+				BAAC98C8190DEE7F009D2A7E /* AppDelegate.h */,
+				BAAC98C9190DEE7F009D2A7E /* AppDelegate.m */,
+				BA093D2C194A3DB50073D7A9 /* Main View */,
+				BA9D3362194539BD0089516C /* Main View Models and User Class */,
+				BAAE460B192E8BA100053084 /* Authentication viewControllers */,
+				BAAC98D4190DEE7F009D2A7E /* Images.xcassets */,
+				BAAC98C0190DEE7F009D2A7E /* Supporting Files */,
+			);
+			name = "MusicaMatch v 0.52";
+			path = "MusicaMatch v 0.51";
+			sourceTree = "<group>";
+		};
+		BAAC98C0190DEE7F009D2A7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAAC98D1190DEE7F009D2A7E /* ViewController.h */,
+				BAAC98D2190DEE7F009D2A7E /* ViewController.m */,
+				BAAC98C1190DEE7F009D2A7E /* MusicaMatch v 0.52-Info.plist */,
+				BAAC98C2190DEE7F009D2A7E /* InfoPlist.strings */,
+				BAAC98C5190DEE7F009D2A7E /* main.m */,
+				BAAC98C7190DEE7F009D2A7E /* MusicaMatch v 0.52-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAAC98E1190DEE80009D2A7E /* MusicaMatch v 0.52Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BAAC98E7190DEE80009D2A7E /* MusicaMatch_v_0_52Tests.m */,
+				BAAC98E2190DEE80009D2A7E /* Supporting Files */,
+			);
+			name = "MusicaMatch v 0.52Tests";
+			path = "MusicaMatch v 0.51Tests";
+			sourceTree = "<group>";
+		};
+		BAAC98E2190DEE80009D2A7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAAC98E3190DEE80009D2A7E /* MusicaMatch v 0.52Tests-Info.plist */,
+				BAAC98E4190DEE80009D2A7E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAAE460B192E8BA100053084 /* Authentication viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BAAC990E190DEFC8009D2A7E /* preAuthenticationViewController.m */,
+				BAAC990D190DEFC8009D2A7E /* preAuthenticationViewController.h */,
+				BAAC9910190DEFE3009D2A7E /* musicaMatchLoginViewController.h */,
+				BAAC9911190DEFE3009D2A7E /* musicaMatchLoginViewController.m */,
+				BAAC9913190DEFEF009D2A7E /* musicaMatchSignupViewController.h */,
+				BAAC9914190DEFEF009D2A7E /* musicaMatchSignupViewController.m */,
+			);
+			name = "Authentication viewControllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAAC98B5190DEE7F009D2A7E /* MusicaMatch v 0.52 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAAC98EB190DEE80009D2A7E /* Build configuration list for PBXNativeTarget "MusicaMatch v 0.52" */;
+			buildPhases = (
+				BAAC98B2190DEE7F009D2A7E /* Sources */,
+				BAAC98B3190DEE7F009D2A7E /* Frameworks */,
+				BAAC98B4190DEE7F009D2A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MusicaMatch v 0.52";
+			productName = "MusicaMatch v 0.51";
+			productReference = BAAC98B6190DEE7F009D2A7E /* MusicaMatch v 0.52.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAAC98D9190DEE80009D2A7E /* MusicaMatch v 0.52Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAAC98EE190DEE80009D2A7E /* Build configuration list for PBXNativeTarget "MusicaMatch v 0.52Tests" */;
+			buildPhases = (
+				BAAC98D6190DEE80009D2A7E /* Sources */,
+				BAAC98D7190DEE80009D2A7E /* Frameworks */,
+				BAAC98D8190DEE80009D2A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAAC98E0190DEE80009D2A7E /* PBXTargetDependency */,
+			);
+			name = "MusicaMatch v 0.52Tests";
+			productName = "MusicaMatch v 0.51Tests";
+			productReference = BAAC98DA190DEE80009D2A7E /* MusicaMatch v 0.52Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAAC98AE190DEE7F009D2A7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Brett Walfish";
+				TargetAttributes = {
+					BAAC98D9190DEE80009D2A7E = {
+						TestTargetID = BAAC98B5190DEE7F009D2A7E;
+					};
+				};
+			};
+			buildConfigurationList = BAAC98B1190DEE7F009D2A7E /* Build configuration list for PBXProject "MusicaMatch v 0.52" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAAC98AD190DEE7F009D2A7E;
+			productRefGroup = BAAC98B7190DEE7F009D2A7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAAC98B5190DEE7F009D2A7E /* MusicaMatch v 0.52 */,
+				BAAC98D9190DEE80009D2A7E /* MusicaMatch v 0.52Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAAC98B4190DEE7F009D2A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAC98D0190DEE7F009D2A7E /* Main_iPad.storyboard in Resources */,
+				BAAC98D5190DEE7F009D2A7E /* Images.xcassets in Resources */,
+				BAAC98CD190DEE7F009D2A7E /* Main_iPhone.storyboard in Resources */,
+				BAAC98C4190DEE7F009D2A7E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAC98D8190DEE80009D2A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAC98E6190DEE80009D2A7E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAAC98B2190DEE7F009D2A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAC9912190DEFE3009D2A7E /* musicaMatchLoginViewController.m in Sources */,
+				BA9D3361194539160089516C /* tableViewModel.m in Sources */,
+				BA3AF94C19A0647F00B07BB6 /* musicaMatchMainViewController.m in Sources */,
+				30230E6519EC23B5007EA3CD /* currentUserProfileController.m in Sources */,
+				BAAC98D3190DEE7F009D2A7E /* ViewController.m in Sources */,
+				BA775B8F19D8D97400509471 /* homeTabController.m in Sources */,
+				BAAC9915190DEFEF009D2A7E /* musicaMatchSignupViewController.m in Sources */,
+				BAAC98CA190DEE7F009D2A7E /* AppDelegate.m in Sources */,
+				BA76328319DB2012008627E5 /* messagesTableViewController.m in Sources */,
+				302934F119EB17C000796C28 /* Degree.m in Sources */,
+				BAAC990F190DEFC8009D2A7E /* preAuthenticationViewController.m in Sources */,
+				30FFA27D19EB32C0006EA614 /* nearMeDetails.m in Sources */,
+				BAAC98C6190DEE7F009D2A7E /* main.m in Sources */,
+				BAE1A48B19D8DFAE009A5958 /* nearMeController.m in Sources */,
+				BA9D3365194539EB0089516C /* Users.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAAC98D6190DEE80009D2A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAC98E8190DEE80009D2A7E /* MusicaMatch_v_0_52Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAAC98E0190DEE80009D2A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAAC98B5190DEE7F009D2A7E /* MusicaMatch v 0.52 */;
+			targetProxy = BAAC98DF190DEE80009D2A7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAAC98C2190DEE7F009D2A7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAAC98C3190DEE7F009D2A7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BAAC98CB190DEE7F009D2A7E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAAC98CC190DEE7F009D2A7E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BAAC98CE190DEE7F009D2A7E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAAC98CF190DEE7F009D2A7E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		BAAC98E4190DEE80009D2A7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAAC98E5190DEE80009D2A7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAAC98E9190DEE80009D2A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAAC98EA190DEE80009D2A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAAC98EC190DEE80009D2A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/bwalfish/Dropbox/parse-library-1.4.1",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicaMatch v 0.51/MusicaMatch v 0.52-Prefix.pch";
+				INFOPLIST_FILE = "MusicaMatch v 0.51/MusicaMatch v 0.52-Info.plist";
+				PRODUCT_NAME = "MusicaMatch v 0.52";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BAAC98ED190DEE80009D2A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/bwalfish/Dropbox/parse-library-1.4.1",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicaMatch v 0.51/MusicaMatch v 0.52-Prefix.pch";
+				INFOPLIST_FILE = "MusicaMatch v 0.51/MusicaMatch v 0.52-Info.plist";
+				PRODUCT_NAME = "MusicaMatch v 0.52";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BAAC98EF190DEE80009D2A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MusicaMatch v 0.51.app/MusicaMatch v 0.51";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicaMatch v 0.51/MusicaMatch v 0.51-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MusicaMatch v 0.51Tests/MusicaMatch v 0.52Tests-Info.plist";
+				PRODUCT_NAME = "MusicaMatch v 0.52Tests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BAAC98F0190DEE80009D2A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MusicaMatch v 0.51.app/MusicaMatch v 0.51";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MusicaMatch v 0.51/MusicaMatch v 0.51-Prefix.pch";
+				INFOPLIST_FILE = "MusicaMatch v 0.51Tests/MusicaMatch v 0.52Tests-Info.plist";
+				PRODUCT_NAME = "MusicaMatch v 0.52Tests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAAC98B1190DEE7F009D2A7E /* Build configuration list for PBXProject "MusicaMatch v 0.52" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAC98E9190DEE80009D2A7E /* Debug */,
+				BAAC98EA190DEE80009D2A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAAC98EB190DEE80009D2A7E /* Build configuration list for PBXNativeTarget "MusicaMatch v 0.52" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAC98EC190DEE80009D2A7E /* Debug */,
+				BAAC98ED190DEE80009D2A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAAC98EE190DEE80009D2A7E /* Build configuration list for PBXNativeTarget "MusicaMatch v 0.52Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAC98EF190DEE80009D2A7E /* Debug */,
+				BAAC98F0190DEE80009D2A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAAC98AE190DEE7F009D2A7E /* Project object */;
+}
