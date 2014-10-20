@@ -22,8 +22,6 @@
     self.profileScrollView.contentSize = CGSizeMake(self.view.frame.size.width, 1000);
     
     self.profileSearchBar.delegate=self;
-    
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -31,7 +29,6 @@
     //create gesture responder to dismiss first responder
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
-    
 }
 
 -(void)dismissKeyboard

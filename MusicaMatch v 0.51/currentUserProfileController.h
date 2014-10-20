@@ -10,10 +10,19 @@
 
 @interface currentUserProfileController : UIViewController <UIBarPositioningDelegate>
 
-@property (strong, nonatomic) IBOutlet UIImageView *ProfileheaderImageView;
-@property (strong, nonatomic) IBOutlet UIScrollView *profileScrollView;
-@property (strong, nonatomic) IBOutlet UIImageView *profileShareButton;
+//Header Properties
 @property (strong, nonatomic) IBOutlet UISearchBar *profileSearchBar;
 
+//Major User Details Properties
+@property (strong, nonatomic) IBOutlet UIImageView *currentUserProfileImage;
+@property (strong, nonatomic) IBOutlet UILabel *currentUserNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *currentUserInstrumentLabel;
+@property (strong, nonatomic) IBOutlet UILabel *currentUserLocationLabel;
+
+
+
+
+//Body Properties
+@property (strong, nonatomic) IBOutlet UIScrollView *profileScrollView;
 
 @end

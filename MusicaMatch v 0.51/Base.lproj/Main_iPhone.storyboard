@@ -34,12 +34,39 @@
                                 <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MajorUserDetailsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CRA-1W-ZOy">
+                                <rect key="frame" x="114" y="74" width="212" height="116"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myProfilePicSpacer" translatesAutoresizingMaskIntoConstraints="NO" id="ukY-3c-Ltm">
+                                <rect key="frame" x="0.0" y="73" width="116" height="119"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instrument" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAy-O0-LY4">
+                                <rect key="frame" x="129" y="134" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viB-bx-1KA">
+                                <rect key="frame" x="129" y="157" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Last" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sd-Nv-ZM9">
+                                <rect key="frame" x="124" y="91" width="117" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="Gey-p2-g6s"/>
                     <connections>
-                        <outlet property="ProfileheaderImageView" destination="e4i-fH-SNs" id="XR4-ID-wZU"/>
+                        <outlet property="currentUserInstrumentLabel" destination="SAy-O0-LY4" id="Ddl-bF-wBN"/>
+                        <outlet property="currentUserLocationLabel" destination="viB-bx-1KA" id="adp-rY-PGQ"/>
+                        <outlet property="currentUserNameLabel" destination="9Sd-Nv-ZM9" id="g3x-bu-oIM"/>
+                        <outlet property="currentUserProfileImage" destination="ukY-3c-Ltm" id="plb-LK-tH0"/>
                         <outlet property="profileScrollView" destination="mqa-IX-ixs" id="j3j-fr-4j5"/>
                         <outlet property="profileSearchBar" destination="gh0-PP-Zx3" id="49d-L8-PZh"/>
                         <outlet property="searchDisplayController" destination="beG-oZ-LEI" id="182-KS-Dvh"/>
@@ -272,8 +299,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MajorUserDetailsBackground" width="451" height="293"/>
         <image name="ProfileHeaderBackground" width="750" height="151"/>
         <image name="Share button White" width="38" height="53"/>
+        <image name="myProfilePicSpacer" width="301" height="301"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
