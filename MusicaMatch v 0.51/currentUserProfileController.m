@@ -21,13 +21,46 @@
     
     self.profileScrollView.contentSize = CGSizeMake(self.view.frame.size.width, 1000);
     
+    self.profileSearchBar.delegate=self;
     
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    //create gesture responder to dismiss first responder
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+    
+}
+
+-(void)dismissKeyboard
+{
+    [self.profileSearchBar resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark UISearch Bar Protocols
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
+{
+    return TRUE;
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    
+}
+
+- (BOOL)searchBar:(UISearchBar *)searchBar shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    return TRUE;
+}
+
+
 
 /*
 #pragma mark - Navigation

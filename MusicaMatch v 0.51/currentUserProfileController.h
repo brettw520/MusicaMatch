@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface currentUserProfileController : UIViewController
+@interface currentUserProfileController : UIViewController <UIBarPositioningDelegate>
 
+@property (strong, nonatomic) IBOutlet UIImageView *ProfileheaderImageView;
 @property (strong, nonatomic) IBOutlet UIScrollView *profileScrollView;
+@property (strong, nonatomic) IBOutlet UIImageView *profileShareButton;
+@property (strong, nonatomic) IBOutlet UISearchBar *profileSearchBar;
 
 
 @end

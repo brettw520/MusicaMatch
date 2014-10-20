@@ -18,25 +18,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqa-IX-ixs">
-                                <rect key="frame" x="0.0" y="28" width="320" height="568"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZi-LT-rEr">
-                                        <rect key="frame" x="139" y="147" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                                <rect key="frame" x="0.0" y="242" width="320" height="568"/>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfileHeaderBackground" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-fH-SNs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9p-EG-cQV">
+                                <rect key="frame" x="280" y="28" width="24" height="32"/>
+                                <state key="normal" image="Share button White">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-PP-Zx3">
+                                <rect key="frame" x="40" y="22" width="224" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="Gey-p2-g6s"/>
                     <connections>
+                        <outlet property="ProfileheaderImageView" destination="e4i-fH-SNs" id="XR4-ID-wZU"/>
                         <outlet property="profileScrollView" destination="mqa-IX-ixs" id="j3j-fr-4j5"/>
+                        <outlet property="profileSearchBar" destination="gh0-PP-Zx3" id="49d-L8-PZh"/>
+                        <outlet property="searchDisplayController" destination="beG-oZ-LEI" id="182-KS-Dvh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeC-et-TOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="beG-oZ-LEI">
+                    <connections>
+                        <outlet property="delegate" destination="kA2-ZI-BOA" id="u8F-ju-dI7"/>
+                        <outlet property="searchContentsController" destination="kA2-ZI-BOA" id="xsy-d4-TLj"/>
+                        <outlet property="searchResultsDataSource" destination="kA2-ZI-BOA" id="7XH-kU-xiG"/>
+                        <outlet property="searchResultsDelegate" destination="kA2-ZI-BOA" id="E7X-hz-IIA"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-84" y="-937"/>
         </scene>
@@ -203,7 +220,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="AWe-WG-Rdq"/>
+                    <tabBarItem key="tabBarItem" title="Music Feed" id="AWe-WG-Rdq"/>
                     <connections>
                         <outlet property="logoutButton" destination="4qA-gL-SwV" id="WMy-z9-2nB"/>
                     </connections>
@@ -254,6 +271,10 @@
             <point key="canvasLocation" x="-657" y="479"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ProfileHeaderBackground" width="750" height="151"/>
+        <image name="Share button White" width="38" height="53"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

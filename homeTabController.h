@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface homeTabController : UIViewController
+@interface homeTabController : UIViewController 
 
 @property (strong, nonatomic) IBOutlet UIButton *logoutButton;
 
