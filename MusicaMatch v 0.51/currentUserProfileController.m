@@ -26,8 +26,6 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    self.profileScrollView.backgroundColor = [UIColor lightGrayColor];
-    
     //create gesture responder to dismiss first responder
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
