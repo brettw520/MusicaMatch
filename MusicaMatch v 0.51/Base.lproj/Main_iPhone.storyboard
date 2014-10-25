@@ -17,28 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfileHeaderBackground" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-fH-SNs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ProfileHeaderBackground" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-fH-SNs">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="VeT-zz-d2b"/>
+                                    <constraint firstAttribute="height" constant="77" id="nVK-ch-aD5"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9p-EG-cQV">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9p-EG-cQV">
                                 <rect key="frame" x="280" y="28" width="24" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="0Ul-FY-v3Q"/>
+                                    <constraint firstAttribute="height" constant="32" id="gzD-Kb-NfD"/>
+                                </constraints>
                                 <state key="normal" image="Share button White">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-PP-Zx3">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-PP-Zx3">
                                 <rect key="frame" x="40" y="22" width="224" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DWV-rD-531"/>
+                                    <constraint firstAttribute="width" constant="224" id="RDC-TY-d2j"/>
+                                </constraints>
                                 <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqa-IX-ixs">
                                 <rect key="frame" x="0.0" y="75" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MajorUserDetailsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CRA-1W-ZOy">
-                                        <rect key="frame" x="108" y="-1" width="212" height="116"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myProfilePicSpacer" translatesAutoresizingMaskIntoConstraints="NO" id="ukY-3c-Ltm">
-                                        <rect key="frame" x="-6" y="-2" width="116" height="119"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="MajorUserDetailsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CRA-1W-ZOy">
+                                        <rect key="frame" x="0.0" y="-1" width="320" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="116" id="Han-8R-Gyn"/>
+                                            <constraint firstAttribute="width" constant="320" id="yCG-FV-70l"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instrument" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAy-O0-LY4">
                                         <rect key="frame" x="129" y="55" width="135" height="21"/>
@@ -58,32 +71,58 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRX-cZ-ncr">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRX-cZ-ncr">
                                         <rect key="frame" x="9" y="126" width="92" height="58"/>
-                                        <state key="normal" title="Button" image="Thoughts">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="92" id="MHY-uc-yVF"/>
+                                            <constraint firstAttribute="height" constant="58" id="b5L-R3-07f"/>
+                                        </constraints>
+                                        <state key="normal" image="Thoughts">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYb-8U-FtB">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYb-8U-FtB">
                                         <rect key="frame" x="216" y="125" width="94" height="60"/>
-                                        <state key="normal" title="Button" image="Media Button">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="W4N-tG-fHg"/>
+                                            <constraint firstAttribute="width" constant="94" id="has-5P-9gT"/>
+                                        </constraints>
+                                        <state key="normal" image="Media Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5P-kq-Hn5">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5P-kq-Hn5">
                                         <rect key="frame" x="110" y="126" width="96" height="58"/>
-                                        <state key="normal" title="Button" image="My Colleagues Button">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="HrV-se-Bcy"/>
+                                            <constraint firstAttribute="width" constant="96" id="SIT-VY-6f7"/>
+                                        </constraints>
+                                        <state key="normal" image="My Colleagues Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRn-U4-nqB">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRn-U4-nqB">
                                         <rect key="frame" x="247" y="72" width="59" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="59" id="Ycn-1n-5Qu"/>
+                                            <constraint firstAttribute="height" constant="36" id="hDb-B0-z9r"/>
+                                        </constraints>
                                         <state key="normal" image="Edit Profile">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="myProfilePicSpacer" translatesAutoresizingMaskIntoConstraints="NO" id="ukY-3c-Ltm">
+                                        <rect key="frame" x="16" y="12" width="92" height="93"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="93" id="lsb-Eu-4oG"/>
+                                            <constraint firstAttribute="width" constant="92" id="yQA-rO-ROb"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CRA-1W-ZOy" firstAttribute="leading" secondItem="ukY-3c-Ltm" secondAttribute="trailing" constant="-108" id="KHo-nJ-Xov"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
