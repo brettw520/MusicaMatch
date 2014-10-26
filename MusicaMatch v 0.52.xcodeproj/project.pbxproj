@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		30230E6519EC23B5007EA3CD /* currentUserProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30230E6419EC23B5007EA3CD /* currentUserProfileController.m */; };
 		302934F119EB17C000796C28 /* Degree.m in Sources */ = {isa = PBXBuildFile; fileRef = 302934F019EB17C000796C28 /* Degree.m */; };
+		30E8C5E619FCB5B700353096 /* currentUserProfileTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */; };
 		30FFA27D19EB32C0006EA614 /* nearMeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FFA27C19EB32C0006EA614 /* nearMeDetails.m */; };
-		BA3AF94C19A0647F00B07BB6 /* musicaMatchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3AF94B19A0647F00B07BB6 /* musicaMatchMainViewController.m */; };
 		BA76328319DB2012008627E5 /* messagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76328219DB2012008627E5 /* messagesTableViewController.m */; };
 		BA775B8F19D8D97400509471 /* homeTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA775B8E19D8D97400509471 /* homeTabController.m */; };
 		BA9D3361194539160089516C /* tableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D3360194539160089516C /* tableViewModel.m */; };
@@ -65,10 +65,10 @@
 		30230E6419EC23B5007EA3CD /* currentUserProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentUserProfileController.m; sourceTree = "<group>"; };
 		302934EF19EB17C000796C28 /* Degree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Degree.h; sourceTree = "<group>"; };
 		302934F019EB17C000796C28 /* Degree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Degree.m; sourceTree = "<group>"; };
+		30E8C5E419FCB5B700353096 /* currentUserProfileTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = currentUserProfileTableModel.h; sourceTree = "<group>"; };
+		30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentUserProfileTableModel.m; sourceTree = "<group>"; };
 		30FFA27B19EB32C0006EA614 /* nearMeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nearMeDetails.h; sourceTree = "<group>"; };
 		30FFA27C19EB32C0006EA614 /* nearMeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nearMeDetails.m; sourceTree = "<group>"; };
-		BA3AF94A19A0647F00B07BB6 /* musicaMatchMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = musicaMatchMainViewController.h; sourceTree = "<group>"; };
-		BA3AF94B19A0647F00B07BB6 /* musicaMatchMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = musicaMatchMainViewController.m; sourceTree = "<group>"; };
 		BA76328119DB2012008627E5 /* messagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messagesTableViewController.h; sourceTree = "<group>"; };
 		BA76328219DB2012008627E5 /* messagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messagesTableViewController.m; sourceTree = "<group>"; };
 		BA775B8D19D8D97400509471 /* homeTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = homeTabController.h; path = ../homeTabController.h; sourceTree = "<group>"; };
@@ -165,6 +165,8 @@
 			children = (
 				30230E6319EC23B5007EA3CD /* currentUserProfileController.h */,
 				30230E6419EC23B5007EA3CD /* currentUserProfileController.m */,
+				30E8C5E419FCB5B700353096 /* currentUserProfileTableModel.h */,
+				30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */,
 			);
 			name = currentUserProfileController;
 			sourceTree = "<group>";
@@ -197,15 +199,6 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
-		302934F519EB310600796C28 /* musicaMatchController **prep for deletion** */ = {
-			isa = PBXGroup;
-			children = (
-				BA3AF94A19A0647F00B07BB6 /* musicaMatchMainViewController.h */,
-				BA3AF94B19A0647F00B07BB6 /* musicaMatchMainViewController.m */,
-			);
-			name = "musicaMatchController **prep for deletion**";
-			sourceTree = "<group>";
-		};
 		302934F919EB318B00796C28 /* Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,21 +208,18 @@
 			name = Details;
 			sourceTree = "<group>";
 		};
-		BA093D2C194A3DB50073D7A9 /* Main View */ = {
+		BA093D2C194A3DB50073D7A9 /* Tab View */ = {
 			isa = PBXGroup;
 			children = (
-				30230E6619EC23C9007EA3CD /* currentUserProfileController */,
-				302934F519EB310600796C28 /* musicaMatchController **prep for deletion** */,
 				302934F419EB307F00796C28 /* Home */,
+				30230E6619EC23C9007EA3CD /* currentUserProfileController */,
 				302934F219EB306000796C28 /* NearMe and its Detail View */,
 				302934F319EB307300796C28 /* Messages and its Details */,
-				BAAC98CB190DEE7F009D2A7E /* Main_iPhone.storyboard */,
-				BAAC98CE190DEE7F009D2A7E /* Main_iPad.storyboard */,
 			);
-			name = "Main View";
+			name = "Tab View";
 			sourceTree = "<group>";
 		};
-		BA9D3362194539BD0089516C /* Main View Models and User Class */ = {
+		BA9D3362194539BD0089516C /* Helper Methods and Classes */ = {
 			isa = PBXGroup;
 			children = (
 				BA9D335F194539160089516C /* tableViewModel.h */,
@@ -239,7 +229,7 @@
 				302934EF19EB17C000796C28 /* Degree.h */,
 				302934F019EB17C000796C28 /* Degree.m */,
 			);
-			name = "Main View Models and User Class";
+			name = "Helper Methods and Classes";
 			sourceTree = "<group>";
 		};
 		BAAC98AD190DEE7F009D2A7E = {
@@ -292,9 +282,11 @@
 			children = (
 				BAAC98C8190DEE7F009D2A7E /* AppDelegate.h */,
 				BAAC98C9190DEE7F009D2A7E /* AppDelegate.m */,
-				BA093D2C194A3DB50073D7A9 /* Main View */,
-				BA9D3362194539BD0089516C /* Main View Models and User Class */,
+				BAAC98CB190DEE7F009D2A7E /* Main_iPhone.storyboard */,
+				BAAC98CE190DEE7F009D2A7E /* Main_iPad.storyboard */,
 				BAAE460B192E8BA100053084 /* Authentication viewControllers */,
+				BA093D2C194A3DB50073D7A9 /* Tab View */,
+				BA9D3362194539BD0089516C /* Helper Methods and Classes */,
 				BAAC98D4190DEE7F009D2A7E /* Images.xcassets */,
 				BAAC98C0190DEE7F009D2A7E /* Supporting Files */,
 			);
@@ -447,9 +439,9 @@
 			files = (
 				BAAC9912190DEFE3009D2A7E /* musicaMatchLoginViewController.m in Sources */,
 				BA9D3361194539160089516C /* tableViewModel.m in Sources */,
-				BA3AF94C19A0647F00B07BB6 /* musicaMatchMainViewController.m in Sources */,
 				30230E6519EC23B5007EA3CD /* currentUserProfileController.m in Sources */,
 				BAAC98D3190DEE7F009D2A7E /* ViewController.m in Sources */,
+				30E8C5E619FCB5B700353096 /* currentUserProfileTableModel.m in Sources */,
 				BA775B8F19D8D97400509471 /* homeTabController.m in Sources */,
 				BAAC9915190DEFEF009D2A7E /* musicaMatchSignupViewController.m in Sources */,
 				BAAC98CA190DEE7F009D2A7E /* AppDelegate.m in Sources */,

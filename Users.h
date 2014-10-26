@@ -14,7 +14,8 @@
 
 @property (nonatomic,strong) NSString *objectId;
 @property (nonatomic,strong) NSString *username;
-@property (nonatomic,strong) NSString *authData;
+@property (nonatomic,strong) NSString *firstName;
+@property (nonatomic,strong) NSString *lastName;
 @property (nonatomic,strong) NSString *phoneNumber;
 @property (nonatomic,strong) NSString *instrument;
 @property (nonatomic, strong) NSMutableArray *education; // This array to store objects of Degree.h

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface currentUserProfileController : UIViewController <UIBarPositioningDelegate>
 
 //Header Properties
@@ -20,9 +21,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *currentUserLocationLabel;
 
 
-
-
 //Body Properties
 @property (strong, nonatomic) IBOutlet UIScrollView *profileScrollView;
+
+//TableView
+@property (strong, nonatomic) IBOutlet UITableView *currentUserTableVIew;
 
 @end
