@@ -11,6 +11,7 @@
 		302934F119EB17C000796C28 /* Degree.m in Sources */ = {isa = PBXBuildFile; fileRef = 302934F019EB17C000796C28 /* Degree.m */; };
 		30E8C5E619FCB5B700353096 /* currentUserProfileTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */; };
 		30FFA27D19EB32C0006EA614 /* nearMeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FFA27C19EB32C0006EA614 /* nearMeDetails.m */; };
+		BA25E0FD19FD907400F0BBA4 /* currentUserProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25E0FC19FD907400F0BBA4 /* currentUserProfileTableViewController.m */; };
 		BA76328319DB2012008627E5 /* messagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76328219DB2012008627E5 /* messagesTableViewController.m */; };
 		BA775B8F19D8D97400509471 /* homeTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA775B8E19D8D97400509471 /* homeTabController.m */; };
 		BA9D3361194539160089516C /* tableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D3360194539160089516C /* tableViewModel.m */; };
@@ -69,6 +70,8 @@
 		30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentUserProfileTableModel.m; sourceTree = "<group>"; };
 		30FFA27B19EB32C0006EA614 /* nearMeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nearMeDetails.h; sourceTree = "<group>"; };
 		30FFA27C19EB32C0006EA614 /* nearMeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nearMeDetails.m; sourceTree = "<group>"; };
+		BA25E0FB19FD907400F0BBA4 /* currentUserProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = currentUserProfileTableViewController.h; sourceTree = "<group>"; };
+		BA25E0FC19FD907400F0BBA4 /* currentUserProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentUserProfileTableViewController.m; sourceTree = "<group>"; };
 		BA76328119DB2012008627E5 /* messagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messagesTableViewController.h; sourceTree = "<group>"; };
 		BA76328219DB2012008627E5 /* messagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messagesTableViewController.m; sourceTree = "<group>"; };
 		BA775B8D19D8D97400509471 /* homeTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = homeTabController.h; path = ../homeTabController.h; sourceTree = "<group>"; };
@@ -163,8 +166,9 @@
 		30230E6619EC23C9007EA3CD /* currentUserProfileController */ = {
 			isa = PBXGroup;
 			children = (
-				30230E6319EC23B5007EA3CD /* currentUserProfileController.h */,
-				30230E6419EC23B5007EA3CD /* currentUserProfileController.m */,
+				BA25E0FB19FD907400F0BBA4 /* currentUserProfileTableViewController.h */,
+				BA25E0FC19FD907400F0BBA4 /* currentUserProfileTableViewController.m */,
+				BA25E0FA19FD904000F0BBA4 /* currentUserProfile Not Tableview */,
 				30E8C5E419FCB5B700353096 /* currentUserProfileTableModel.h */,
 				30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */,
 			);
@@ -217,6 +221,15 @@
 				302934F319EB307300796C28 /* Messages and its Details */,
 			);
 			name = "Tab View";
+			sourceTree = "<group>";
+		};
+		BA25E0FA19FD904000F0BBA4 /* currentUserProfile Not Tableview */ = {
+			isa = PBXGroup;
+			children = (
+				30230E6319EC23B5007EA3CD /* currentUserProfileController.h */,
+				30230E6419EC23B5007EA3CD /* currentUserProfileController.m */,
+			);
+			name = "currentUserProfile Not Tableview";
 			sourceTree = "<group>";
 		};
 		BA9D3362194539BD0089516C /* Helper Methods and Classes */ = {
@@ -449,6 +462,7 @@
 				302934F119EB17C000796C28 /* Degree.m in Sources */,
 				BAAC990F190DEFC8009D2A7E /* preAuthenticationViewController.m in Sources */,
 				30FFA27D19EB32C0006EA614 /* nearMeDetails.m in Sources */,
+				BA25E0FD19FD907400F0BBA4 /* currentUserProfileTableViewController.m in Sources */,
 				BAAC98C6190DEE7F009D2A7E /* main.m in Sources */,
 				BAE1A48B19D8DFAE009A5958 /* nearMeController.m in Sources */,
 				BA9D3365194539EB0089516C /* Users.m in Sources */,
