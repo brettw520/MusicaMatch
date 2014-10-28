@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 
-@interface currentUserProfileTableModel : NSObject
+@interface currentUserProfileTableModel : NSObject <CLLocationManagerDelegate>
 
-
+-(void)setUpArrays;
 
 @end

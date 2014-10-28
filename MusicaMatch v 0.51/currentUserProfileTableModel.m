@@ -7,6 +7,8 @@
 //
 
 #import "currentUserProfileTableModel.h"
+#import <CoreLocation/CoreLocation.h>
+
 
 
 
@@ -19,43 +21,53 @@
 
 @implementation currentUserProfileTableModel
 -(void)setUpArrays
+{
+    _userElements = [[NSMutableArray alloc]init];
+    
+    //setup the profilePhoto Image
+    if ([PFUser currentUser][@"profileImage"]==nil)
     {
-        //setup the profilePhoto Image
-        if ([PFUser currentUser][@"profileImage"]==nil)
-        {
-            UIImage *profilePhoto = [UIImage imageNamed:@"MyProfilePicSpacer"];
-            
-            //set the size
-            
-            //add the photo to the array
-            [_userElements addObject:profilePhoto];
-            
-        }
-        else
-        {
-            UIImage *profilePhoto = (UIImage *)[PFUser currentUser][@"profileImage"];
-            
-            //set the size
-            
-            //add the photo to the array
-            [_userElements addObject:profilePhoto];
-        }
+        UIImageView *profilePhoto = [[UIImageView alloc]initWithFrame:CGRectMake(16, 13, 92, 92)];
+        profilePhoto.image = [UIImage imageNamed: @"MyProfilePicSpacer.png"];
         
-        //setup the User's Name label
-        NSString *firstLast = [NSString stringWithFormat:@"%@ %@", (NSString*)[PFUser currentUser][@"firstName"], (NSString*)[PFUser currentUser][@"lastName"]];
+//set the size
         
-        UILabel *firstLastLabel = [[UILabel alloc]init];
-        firstLastLabel.text = firstLast;
-        
-        //set attributes of firstLastLabel
-        
-        [_userElements addObject:firstLastLabel];
-        
+        //add the photo to the array
+        [_userElements addObject:profilePhoto];
         
     }
+    else
+    {
+        UIImage *profilePhoto = (UIImage *)[PFUser currentUser][@"profileImage"];
+        
+//set the size
+        
+        //add the photo to the array
+        [_userElements addObject:profilePhoto];
+    }
+    
+    //setup the User's Name label
+    NSString *firstLast = [NSString stringWithFormat:@"%@ %@", (NSString*)[PFUser currentUser][@"firstName"], (NSString*)[PFUser currentUser][@"lastName"]];
+    
+    UILabel *firstLastLabel = [[UILabel alloc]init];
+    firstLastLabel.text = firstLast;
+    
+//set attributes of firstLastLabel
+    
+    [_userElements addObject:firstLastLabel];
+    
+    //set the location label
+    PFGeoPoint *currentUserGeoPoint = [PFUser currentUser][@"location"];
+    
+    CLLocation *currentUserLocation = [[CLLocation alloc]initWithLatitude:currentUserGeoPoint.latitude longitude:currentUserGeoPoint.longitude];
+    
+    NSLog(@"complete");
+}
 
-
-
-
+- (void)reverseGeocodeLocation:(CLLocation *)location
+             completionHandler:(CLGeocodeCompletionHandler)completionHandler
+{
+    
+}
 
 @end

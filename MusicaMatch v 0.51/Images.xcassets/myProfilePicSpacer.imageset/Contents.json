@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "My Profile Pic Spacer.png"
+      "filename" : "MyProfilePicSpacer.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "My Profile Pic Spacer@2x.png"
+      "filename" : "MyProfilePicSpacer@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "My Profile Pic Spacer@3x.png"
+      "filename" : "MyProfilePicSpacer@3x.png"
     }
   ],
   "info" : {

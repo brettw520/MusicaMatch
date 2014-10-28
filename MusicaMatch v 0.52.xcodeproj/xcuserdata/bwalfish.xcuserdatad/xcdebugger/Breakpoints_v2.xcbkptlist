@@ -416,16 +416,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MusicaMatch v 0.51/currentUserProfileTableViewController.m"
-            timestampString = "436055486.930817"
+            filePath = "MusicaMatch v 0.51/currentUserProfileTableModel.m"
+            timestampString = "436170239.04199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-setUpArrays"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

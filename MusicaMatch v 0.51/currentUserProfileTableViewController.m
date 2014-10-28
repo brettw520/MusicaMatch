@@ -9,6 +9,7 @@
 #import "currentUserProfileTableViewController.h"
 #import "Users.h"
 #import <Parse/Parse.h>
+#import "currentUserProfileTableModel.h"
 
 @interface currentUserProfileTableViewController ()
 {
@@ -34,12 +35,25 @@
    
     [self confirmUserData];
     
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+- (IBAction)profileShareButtonClicked:(id)sender
+{
+    //temporary code to check arrays are set up correctly in the currentUserProfileTableModel
+    
+    currentUserProfileTableModel *tempObject = [[currentUserProfileTableModel alloc]init];
+    [tempObject setUpArrays];
+    
+    //End of testing code
+    
+}
+
 
 -(void)confirmUserData
 {
@@ -122,4 +136,6 @@
 }
 */
 
+- (IBAction)profileShareButton:(id)sender {
+}
 @end

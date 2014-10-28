@@ -14,7 +14,7 @@
 //Header properties
 
 @property (strong, nonatomic) IBOutlet UISearchBar *profileSearchBar;
-@property (strong, nonatomic) IBOutlet UIButton *profileShareButton;
+
 
 //currentUserElements prototype cell
 /*

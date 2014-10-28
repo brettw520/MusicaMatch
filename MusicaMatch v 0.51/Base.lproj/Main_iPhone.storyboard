@@ -143,6 +143,10 @@
                                     <state key="normal" image="Share button White">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="profileShareButton:" destination="GDR-zg-Op3" eventType="touchUpInside" id="8dq-dr-SwR"/>
+                                        <action selector="profileShareButtonClicked:" destination="GDR-zg-Op3" eventType="touchUpInside" id="Edo-hx-Mm9"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -230,7 +234,6 @@
                     <tabBarItem key="tabBarItem" title="Profile Table" id="v3d-aE-LGu"/>
                     <connections>
                         <outlet property="profileSearchBar" destination="j4v-Ka-CQQ" id="TPX-C2-Km4"/>
-                        <outlet property="profileShareButton" destination="3CY-Id-hgA" id="ZrJ-e5-eKm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfd-GE-kHA" userLabel="First Responder" sceneMemberID="firstResponder"/>
