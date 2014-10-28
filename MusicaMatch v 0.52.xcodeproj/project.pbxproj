@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		30230E6519EC23B5007EA3CD /* currentUserProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30230E6419EC23B5007EA3CD /* currentUserProfileController.m */; };
 		302934F119EB17C000796C28 /* Degree.m in Sources */ = {isa = PBXBuildFile; fileRef = 302934F019EB17C000796C28 /* Degree.m */; };
+		302BCDFC1A00339900986CF0 /* getCurrentUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 302BCDFB1A00339900986CF0 /* getCurrentUserLocation.m */; };
 		30E8C5E619FCB5B700353096 /* currentUserProfileTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */; };
 		30FFA27D19EB32C0006EA614 /* nearMeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FFA27C19EB32C0006EA614 /* nearMeDetails.m */; };
 		BA25E0FD19FD907400F0BBA4 /* currentUserProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25E0FC19FD907400F0BBA4 /* currentUserProfileTableViewController.m */; };
@@ -66,6 +67,8 @@
 		30230E6419EC23B5007EA3CD /* currentUserProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentUserProfileController.m; sourceTree = "<group>"; };
 		302934EF19EB17C000796C28 /* Degree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Degree.h; sourceTree = "<group>"; };
 		302934F019EB17C000796C28 /* Degree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Degree.m; sourceTree = "<group>"; };
+		302BCDFA1A00339900986CF0 /* getCurrentUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getCurrentUserLocation.h; sourceTree = "<group>"; };
+		302BCDFB1A00339900986CF0 /* getCurrentUserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getCurrentUserLocation.m; sourceTree = "<group>"; };
 		30E8C5E419FCB5B700353096 /* currentUserProfileTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = currentUserProfileTableModel.h; sourceTree = "<group>"; };
 		30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentUserProfileTableModel.m; sourceTree = "<group>"; };
 		30FFA27B19EB32C0006EA614 /* nearMeDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nearMeDetails.h; sourceTree = "<group>"; };
@@ -241,6 +244,8 @@
 				BA9D3364194539EB0089516C /* Users.m */,
 				302934EF19EB17C000796C28 /* Degree.h */,
 				302934F019EB17C000796C28 /* Degree.m */,
+				302BCDFA1A00339900986CF0 /* getCurrentUserLocation.h */,
+				302BCDFB1A00339900986CF0 /* getCurrentUserLocation.m */,
 			);
 			name = "Helper Methods and Classes";
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				BAAC9915190DEFEF009D2A7E /* musicaMatchSignupViewController.m in Sources */,
 				BAAC98CA190DEE7F009D2A7E /* AppDelegate.m in Sources */,
 				BA76328319DB2012008627E5 /* messagesTableViewController.m in Sources */,
+				302BCDFC1A00339900986CF0 /* getCurrentUserLocation.m in Sources */,
 				302934F119EB17C000796C28 /* Degree.m in Sources */,
 				BAAC990F190DEFC8009D2A7E /* preAuthenticationViewController.m in Sources */,
 				30FFA27D19EB32C0006EA614 /* nearMeDetails.m in Sources */,

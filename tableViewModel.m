@@ -9,8 +9,14 @@
 #import <Parse/Parse.h>
 #import "ViewController.h"
 #import "Users.h"
+#import "getCurrentUserLocation.h"
+#import <CoreLocation/CoreLocation.h>
 
 @implementation tableViewModel
+{
+    getCurrentUserLocation *_userLocation;
+    
+}
 
 - (id)init {
     self = [super init];
@@ -27,29 +33,11 @@
 
 -(void)updateCurrentUserLocation
 {
-    NSLog(@"tableViewModel.m updateCurrentUserLocation");
-    
-    //locate current user
-    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error)
-    {
-        NSLog(@"in geoPoint block");
-        
-        if (!error)
-        {
-            // do something with the new geoPoint
-            
-            [PFUser currentUser][@"location"]=geoPoint;
-            [[PFUser currentUser] saveInBackground];
-        }
-        [self.delegate currentUserLocationUpdated]; //notifies delegate that currentUser has been updated
-
-    }];
-    
-//REMOVE ONCE LOCACTION WORKS AGAIN: this negates actually getting user location for current time
-    [self.delegate currentUserLocationUpdated];
+    _userLocation =[[getCurrentUserLocation alloc]init];
+    [_userLocation getNewCurrentUserLocation];
+    _userLocation.delegate = self;
     
 }
-
 
 -(void)getUserMatches //query to populate relevant data
 {
@@ -102,5 +90,23 @@
         }
     ];
 }
+
+#pragma mark getCurrentUserLocation delegate method
+-(void)currentUserLocationIsReady
+{
+    CLLocation *userNewLocation = _userLocation.userLocation;
+    
+    //update location in Parse
+    PFGeoPoint *newLocation= [PFGeoPoint geoPointWithLatitude:userNewLocation.coordinate.latitude longitude:userNewLocation.coordinate.longitude];
+    [PFUser currentUser][@"location"] = newLocation;
+    
+    //save the parse update
+    [[PFUser currentUser]saveInBackground];
+    
+    [self.delegate currentUserLocationUpdated];
+    
+}
+
+
 
 @end

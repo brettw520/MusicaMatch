@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "getCurrentUserLocation.h"
 
 @protocol tableViewModelProtocol <NSObject>
 
