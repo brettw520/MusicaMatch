@@ -12,11 +12,9 @@
 {
     CLLocationManager *_locationManager;
     
-    //variables to return to caller
-    
 }
 
--(void)getNewCurrentUserLocation;
+-(void)getUserLocation;
 {
     //locate current user
     //instantiate global location variables
@@ -24,9 +22,9 @@
     
     //use the instantiated global variables to get currentUserLocation
     [_locationManager requestWhenInUseAuthorization]; //get authorization from user to use location
-    _locationManager.delegate = self;
     _locationManager.desiredAccuracy= kCLLocationAccuracyBest;
     [_locationManager startUpdatingLocation];
+    _locationManager.delegate = self;
 
 }
 
@@ -47,6 +45,7 @@
     [_locationManager stopUpdatingLocation];
     
     [self.delegate currentUserLocationIsReady];
+    
 }
 
 

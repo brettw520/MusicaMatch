@@ -15,6 +15,7 @@
 @implementation tableViewModel
 {
     getCurrentUserLocation *_userLocation;
+    double _distanceFromCurrentUser;
     
 }
 
@@ -34,7 +35,7 @@
 -(void)updateCurrentUserLocation
 {
     _userLocation =[[getCurrentUserLocation alloc]init];
-    [_userLocation getNewCurrentUserLocation];
+    [_userLocation getUserLocation];
     _userLocation.delegate = self;
     
 }
@@ -44,14 +45,13 @@
     //initialize usersToShow
     self.usersToShow = [[[NSMutableArray alloc]init]mutableCopy];
     
-    double distanceFromCurrentUser = 10; // to be read in from PFUser's choices
+    _distanceFromCurrentUser = 10; // to be read in from PFUser's choices
     
-    PFGeoPoint *currentUserLocation = [PFUser currentUser][@"location"];
+    PFGeoPoint *currentUserLocation = [PFGeoPoint geoPointWithLatitude:_userLocation.userLocation.coordinate.latitude longitude:_userLocation.userLocation.coordinate.longitude];
     PFQuery *query = [PFQuery queryWithClassName:@"_User"];
     [query whereKey:@"username" notEqualTo:@""];
     [query whereKey:@"username" notEqualTo:[PFUser currentUser][@"username"]];
-    //[query whereKey:@"surveyComplete" equalTo:@YES];  No longer using survey!
-    [query whereKey:@"location" nearGeoPoint:currentUserLocation withinMiles:distanceFromCurrentUser];
+    [query whereKey:@"location" nearGeoPoint:currentUserLocation withinMiles:_distanceFromCurrentUser];
     //all query parameters are now set
     
     //run the query
@@ -94,14 +94,16 @@
 #pragma mark getCurrentUserLocation delegate method
 -(void)currentUserLocationIsReady
 {
+    /*
     CLLocation *userNewLocation = _userLocation.userLocation;
-    
+     
     //update location in Parse
     PFGeoPoint *newLocation= [PFGeoPoint geoPointWithLatitude:userNewLocation.coordinate.latitude longitude:userNewLocation.coordinate.longitude];
     [PFUser currentUser][@"location"] = newLocation;
     
     //save the parse update
     [[PFUser currentUser]saveInBackground];
+    */
     
     [self.delegate currentUserLocationUpdated];
     

@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
+#import <CoreLocation/CoreLocation.h>
+#import "getCurrentUserLocation.h"
 
-@interface currentUserProfileTableModel : NSObject <CLLocationManagerDelegate>
+@interface currentUserProfileTableModel : NSObject <CLLocationManagerDelegate, getCurrentUserLocationDelegate>
 
 -(void)setUpArrays;
+-(void)setCurrentUserLocation;
 
 @end

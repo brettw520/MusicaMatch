@@ -51,6 +51,8 @@
     [tempObject setUpArrays];
     
     //End of testing code
+    //update location
+    [tempObject setCurrentUserLocation];
     
 }
 

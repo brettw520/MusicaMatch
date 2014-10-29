@@ -9,19 +9,20 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-@protocol getCurrentUserLocation <NSObject>
+@protocol getCurrentUserLocationDelegate <NSObject>
 
 -(void)currentUserLocationIsReady;
 
 @end
 
+
 @interface getCurrentUserLocation : NSObject <CLLocationManagerDelegate>
 
 
-@property (nonatomic, weak) id<getCurrentUserLocation> delegate;
-
--(void)getNewCurrentUserLocation;
+@property (nonatomic, weak) id<getCurrentUserLocationDelegate> delegate;
 
 @property (nonatomic, strong)CLLocation *userLocation;
+
+-(void)getUserLocation;
 
 @end
