@@ -94,7 +94,10 @@
              CLPlacemark *tempPlacemark = [placemarks lastObject];
              NSString *city = [NSString stringWithFormat:@"%@", tempPlacemark.subLocality];
              NSLog(@"%@",city);
+             NSLog(@"%@", tempPlacemark.addressDictionary[@"FormattedAddressLines"]);
              [PFUser currentUser][@"City"]=city;
+             [PFUser currentUser][@"formattedAddress"]=tempPlacemark.addressDictionary[@"FormattedAddressLines"];
+             
              [[PFUser currentUser]saveInBackground];
          }
          
