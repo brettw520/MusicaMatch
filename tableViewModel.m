@@ -35,8 +35,10 @@
 -(void)updateCurrentUserLocation
 {
     _userLocation =[[getCurrentUserLocation alloc]init];
+    
+    _userLocation.delegate = self; //set the delegate before calling the protocol
+    
     [_userLocation getUserLocation];
-    _userLocation.delegate = self;
     
 }
 

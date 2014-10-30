@@ -20,11 +20,13 @@
     //instantiate global location variables
     _locationManager = [[CLLocationManager alloc]init];
     
-    //use the instantiated global variables to get currentUserLocation
+    //use the instantiated global variable to get currentUserLocation
     [_locationManager requestWhenInUseAuthorization]; //get authorization from user to use location
     _locationManager.desiredAccuracy= kCLLocationAccuracyBest;
-    [_locationManager startUpdatingLocation];
     _locationManager.delegate = self;
+    
+    [_locationManager startUpdatingLocation];
+    
 
 }
 
@@ -41,10 +43,12 @@
 {
     NSLog(@"didUpdateToLocation: %@", newLocation);
     self.userLocation = newLocation;
+    [self.delegate currentUserLocationIsReady];
+    
     
     [_locationManager stopUpdatingLocation];
     
-    [self.delegate currentUserLocationIsReady];
+
     
 }
 

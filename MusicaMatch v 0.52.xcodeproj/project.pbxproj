@@ -183,6 +183,8 @@
 			children = (
 				BAE1A48919D8DFAE009A5958 /* nearMeController.h */,
 				BAE1A48A19D8DFAE009A5958 /* nearMeController.m */,
+				BA9D335F194539160089516C /* tableViewModel.h */,
+				BA9D3360194539160089516C /* tableViewModel.m */,
 				302934F919EB318B00796C28 /* Details */,
 			);
 			name = "NearMe and its Detail View";
@@ -238,8 +240,6 @@
 		BA9D3362194539BD0089516C /* Helper Methods and Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BA9D335F194539160089516C /* tableViewModel.h */,
-				BA9D3360194539160089516C /* tableViewModel.m */,
 				BA9D3363194539EB0089516C /* Users.h */,
 				BA9D3364194539EB0089516C /* Users.m */,
 				302934EF19EB17C000796C28 /* Degree.h */,

@@ -31,7 +31,6 @@
     NSLog(@"nearMe Loaded");
     
     [self setUsers];
-
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
