@@ -11,7 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "getCurrentUserLocation.h"
 
-@interface currentUserProfileTableModel : NSObject <CLLocationManagerDelegate, getCurrentUserLocationDelegate>
+@interface currentUserProfileTableModel : NSObject <CLLocationManagerDelegate>
 
 -(void)setUpArrays;
 -(void)setCurrentUserLocation;

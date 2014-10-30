@@ -12,7 +12,7 @@
 {
     NSMutableArray *_userElements;
     NSMutableArray *_usageButtons;
-    getCurrentUserLocation *_updateCurrentLocation; //this object retrieves the new currentLocation
+    getCurrentUserLocation *_currentLocation; //this object retrieves the new currentLocation
 }
 @end
 
@@ -20,7 +20,6 @@
 
 -(void)setUpArrays
 {
-    _updateCurrentLocation = [[getCurrentUserLocation alloc]init];
     _userElements = [[NSMutableArray alloc]init];
     
     //setup the profilePhoto Image
@@ -56,24 +55,29 @@
     [_userElements addObject:firstLastLabel];
     
     //set the location label
-
     
+    NSLog(@"completed setting array");
     
 }
 
 -(void)setCurrentUserLocation
 {
-    _updateCurrentLocation = [[getCurrentUserLocation alloc]init];
-    [_updateCurrentLocation getUserLocation];
-    _updateCurrentLocation.delegate = self;
-      
+    _currentLocation =[[getCurrentUserLocation alloc]init];
+    
+    _currentLocation.delegate = self; //set the delegate before calling the protocol
+    
+    [_currentLocation getUserLocation];
+    
 }
+
+
 
 #pragma mark getCurrentUserLocationDelegate methods
 
+
 -(void)currentUserLocationIsReady
 {
-    CLLocation *newLocation =_updateCurrentLocation.userLocation;
+    CLLocation *newLocation =_currentLocation.userLocation;
     PFGeoPoint *tempGeoPoint = [PFGeoPoint geoPointWithLatitude:newLocation.coordinate.latitude longitude:newLocation.coordinate.longitude];
     [PFUser currentUser][@"location"]=tempGeoPoint;
     //choosing not to save here: want to save everything in 1 saveinbackground message
@@ -90,7 +94,8 @@
              CLPlacemark *tempPlacemark = [placemarks lastObject];
              NSString *city = [NSString stringWithFormat:@"%@", tempPlacemark.subLocality];
              NSLog(@"%@",city);
-                               
+             [PFUser currentUser][@"City"]=city;
+             [[PFUser currentUser]saveInBackground];
          }
          
          else
@@ -98,7 +103,7 @@
              NSLog(@"%@", error.debugDescription);
          }
      }];
-
+    
     
 }
 

@@ -11,9 +11,11 @@
 #import <Parse/Parse.h>
 #import "currentUserProfileTableModel.h"
 
+
 @interface currentUserProfileTableViewController ()
 {
     Users *_currentUser;
+    currentUserProfileTableModel *_userModel;
 }
 @end
 
@@ -47,12 +49,12 @@
 {
     //temporary code to check arrays are set up correctly in the currentUserProfileTableModel
     
-    currentUserProfileTableModel *tempObject = [[currentUserProfileTableModel alloc]init];
-    [tempObject setUpArrays];
+    _userModel = [[currentUserProfileTableModel alloc]init];
+    [_userModel setUpArrays];
     
     //End of testing code
     //update location
-    [tempObject setCurrentUserLocation];
+    [_userModel setCurrentUserLocation];
     
 }
 
@@ -61,7 +63,7 @@
 {
     NSString *userDataConfirmed =[NSString stringWithFormat:@"first name: %@, last name: %@, instrument: %@, location: %@", _currentUser.firstName, _currentUser.lastName, _currentUser.instrument, _currentUser.location];
     
-    NSLog(@"%@",userDataConfirmed);
+    NSLog(@"curentUserProfileTableViewController confirms user data:\n%@",userDataConfirmed);
     
 }
 
