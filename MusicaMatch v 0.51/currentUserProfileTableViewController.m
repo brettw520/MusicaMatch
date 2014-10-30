@@ -10,6 +10,8 @@
 #import "Users.h"
 #import <Parse/Parse.h>
 #import "currentUserProfileTableModel.h"
+#import "Degree.h"
+
 
 
 @interface currentUserProfileTableViewController ()
@@ -24,18 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _currentUser = [[Users alloc]init];
-    PFObject *current = [PFUser currentUser];
-    
-    
-    //define the User elements for _currentUser
-    _currentUser.firstName = current[@"firstName"];
-    _currentUser.lastName = current[@"lastName"];
-    _currentUser.instrument = current[@"Instrument"];
-    _currentUser.location = current[@"location"];
-    
-   
-    [self confirmUserData];
+    [self setupCurrentUserPersonalData];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -43,6 +34,35 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)setupCurrentUserPersonalData
+{
+    _currentUser = [[Users alloc]init];
+    PFObject *current = [PFUser currentUser];
+    
+    
+    //define the User elements for _currentUser
+    _currentUser.objectId = current [@"objectId"];
+     _currentUser.username = current[@"username"];
+    _currentUser.firstName = current[@"firstName"];
+    _currentUser.lastName = current[@"lastName"];
+    _currentUser.instrument = current[@"Instrument"];
+    _currentUser.schoolsAndDegrees = current[@"schoolsAndDegrees"];//stores degrees objects
+    _currentUser.city = current[@"City"];
+    _currentUser.state = current[@"State"];
+    _currentUser.location = current[@"location"];
+   
+    _currentUser.musicalMentors= current[@"musicalMentors"];
+    _currentUser.competitionsPlaced = current[@"competitionsPlaced"];
+    _currentUser.festivalsAttended = current[@"festivalsAttended"];
+    _currentUser.professionalEnsembles = current[@"professionalEsnsembles"];
+   
+    
+    
+    
+    [self confirmUserData];
+
 }
 
 - (IBAction)profileShareButtonClicked:(id)sender
@@ -53,6 +73,8 @@
     [_userModel setUpArrays];
     
     //End of testing code
+    
+    //this method will need to go into editProfile
     //update location
     [_userModel setCurrentUserLocation];
     

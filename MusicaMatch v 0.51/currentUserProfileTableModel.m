@@ -22,6 +22,11 @@
 {
     _userElements = [[NSMutableArray alloc]init];
     
+    //setup section background image
+    UIImageView *userElementsBackground = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 116)];
+    userElementsBackground.image = [UIImage imageNamed:(@"MajorUserDetailsBackground.png")];
+    [_userElements addObject:userElementsBackground];
+    
     //setup the profilePhoto Image
     if ([PFUser currentUser][@"profileImage"]==nil)
     {
@@ -46,15 +51,27 @@
     
     //setup the User's Name label
     NSString *firstLast = [NSString stringWithFormat:@"%@ %@", (NSString*)[PFUser currentUser][@"firstName"], (NSString*)[PFUser currentUser][@"lastName"]];
+
+            //create firstLastLabel
+            UILabel *firstLastLabel = [[UILabel alloc]init];
+            
+            //set the label text
+            firstLastLabel.text = firstLast;
+            
+        #warning set attributes of firstLastLabel including size
+            
+            [_userElements addObject:firstLastLabel];
     
-    UILabel *firstLastLabel = [[UILabel alloc]init];
-    firstLastLabel.text = firstLast;
+    //setup the location label
+    NSString *location= [NSString stringWithFormat:@"%@, %@", [PFUser currentUser][@"City"], [PFUser currentUser][@"State"]];
     
-//set attributes of firstLastLabel
+            //create locationLabel
+            UILabel *locationLabel = [[UILabel alloc]init];
+            locationLabel.text= location;
+            #warning set attributes of locationLabel including size
+            [_userElements addObject:locationLabel];
+            
     
-    [_userElements addObject:firstLastLabel];
-    
-    //set the location label
     
     NSLog(@"completed setting array");
     
@@ -91,12 +108,16 @@
      {
          if(error==nil && [placemarks count]>0)
          {
+             
+             //store string variables with geolocation data
              CLPlacemark *tempPlacemark = [placemarks lastObject];
              NSString *city = [NSString stringWithFormat:@"%@", tempPlacemark.subLocality];
-             NSLog(@"%@",city);
-             NSLog(@"%@", tempPlacemark.addressDictionary[@"FormattedAddressLines"]);
+             NSString *state = [NSString stringWithFormat:@"%@",tempPlacemark.administrativeArea];
+             
+             //Save the string variables to Parse
              [PFUser currentUser][@"City"]=city;
              [PFUser currentUser][@"formattedAddress"]=tempPlacemark.addressDictionary[@"FormattedAddressLines"];
+             [PFUser currentUser][@"State"] = state;
              
              [[PFUser currentUser]saveInBackground];
          }

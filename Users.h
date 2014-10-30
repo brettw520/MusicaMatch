@@ -18,7 +18,9 @@
 @property (nonatomic,strong) NSString *lastName;
 @property (nonatomic,strong) NSString *phoneNumber;
 @property (nonatomic,strong) NSString *instrument;
-@property (nonatomic, strong) NSMutableArray *education; // This array to store objects of Degree.h
+@property (nonatomic, strong) NSMutableArray *schoolsAndDegrees; // This array to store objects of Degree.h
+@property (nonatomic, strong)NSString *city;
+@property (nonatomic, strong)NSString *state;
 @property (nonatomic,strong) NSMutableArray *musicalMentors;
 @property (nonatomic,strong)NSMutableArray *competitionsPlaced;
 @property (nonatomic,strong)NSMutableArray *festivalsAttended;
@@ -27,7 +29,8 @@
 @property (nonatomic, strong) NSMutableArray *genresOfInterest;
 @property (nonatomic, strong)NSMutableArray *messagesFromOtherUsers;
 @property (nonatomic, strong)NSMutableArray *messagesToOtherUsers;
-@property (nonatomic, strong) PFGeoPoint *location;
+@property (nonatomic,strong)PFGeoPoint *location;
+
 
 
 

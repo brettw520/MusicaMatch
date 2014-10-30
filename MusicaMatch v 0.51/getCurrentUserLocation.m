@@ -26,7 +26,6 @@
     _locationManager.delegate = self;
     
     [_locationManager startUpdatingLocation];
-    
 
 }
 
@@ -45,11 +44,7 @@
     self.userLocation = newLocation;
     [self.delegate currentUserLocationIsReady];
     
-    
     [_locationManager stopUpdatingLocation];
-    
-
-    
 }
 
 
