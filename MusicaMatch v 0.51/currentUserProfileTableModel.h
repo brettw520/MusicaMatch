@@ -13,6 +13,9 @@
 
 @interface currentUserProfileTableModel : NSObject <CLLocationManagerDelegate>
 
+@property (nonatomic, strong) NSMutableArray *userElements;
+
+
 -(void)setUpArrays;
 -(void)setCurrentUserLocation;
 

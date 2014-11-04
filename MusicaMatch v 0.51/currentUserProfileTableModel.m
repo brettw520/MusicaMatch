@@ -10,8 +10,6 @@
 
 @interface currentUserProfileTableModel ()
 {
-    NSMutableArray *_userElements;
-    NSMutableArray *_usageButtons;
     getCurrentUserLocation *_currentLocation; //this object retrieves the new currentLocation
 }
 @end
@@ -20,12 +18,12 @@
 
 -(void)setUpArrays
 {
-    _userElements = [[NSMutableArray alloc]init];
+   // _userElements = [[NSMutableArray alloc]init];
     
     //setup section background image
     UIImageView *userElementsBackground = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 116)];
     userElementsBackground.image = [UIImage imageNamed:(@"MajorUserDetailsBackground.png")];
-    [_userElements addObject:userElementsBackground];
+    [self.userElements addObject:userElementsBackground];
     
     //setup the profilePhoto Image
     if ([PFUser currentUser][@"profileImage"]==nil)
@@ -36,7 +34,7 @@
         
         
         //add the photo to the array
-        [_userElements addObject:profilePhoto];
+        [self.userElements addObject:profilePhoto];
         
     }
     else
@@ -46,7 +44,7 @@
         
         
         //add the photo to the array
-        [_userElements addObject:profilePhoto];
+        [self.userElements addObject:profilePhoto];
     }
     
     //setup the User's Name label
@@ -61,20 +59,21 @@
             
         #warning set attributes of firstLastLabel including size
             
-            [_userElements addObject:firstLastLabel];
-     }
+            [self.userElements addObject:firstLastLabel];
+    }
     
     //setup the location label
     {
     NSString *location= [NSString stringWithFormat:@"%@, %@", [PFUser currentUser][@"City"], [PFUser currentUser][@"State"]];
     
-    //create locationLabel
-    UILabel *locationLabel = [[UILabel alloc]init];
-    locationLabel.text= location;
-    #warning set attributes of locationLabel including size
-    [_userElements addObject:locationLabel];
-        
-    }
+
+            //create locationLabel
+            UILabel *locationLabel = [[UILabel alloc]init];
+            locationLabel.text= location;
+            #warning set attributes of locationLabel including size
+            [self.userElements addObject:locationLabel];
+            
+
     
     //setup the editProfileButton
     {
@@ -89,6 +88,7 @@
     }
         
     NSLog(@"completed setting array");
+}
 }
 
 -(void)setCurrentUserLocation

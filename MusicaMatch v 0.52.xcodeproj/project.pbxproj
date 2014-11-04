@@ -13,6 +13,7 @@
 		30E8C5E619FCB5B700353096 /* currentUserProfileTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E8C5E519FCB5B700353096 /* currentUserProfileTableModel.m */; };
 		30FFA27D19EB32C0006EA614 /* nearMeDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FFA27C19EB32C0006EA614 /* nearMeDetails.m */; };
 		BA25E0FD19FD907400F0BBA4 /* currentUserProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25E0FC19FD907400F0BBA4 /* currentUserProfileTableViewController.m */; };
+		BA73FF431A06C3D7004B4FD8 /* Colleagues.m in Sources */ = {isa = PBXBuildFile; fileRef = BA73FF421A06C3D7004B4FD8 /* Colleagues.m */; };
 		BA76328319DB2012008627E5 /* messagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA76328219DB2012008627E5 /* messagesTableViewController.m */; };
 		BA775B8F19D8D97400509471 /* homeTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA775B8E19D8D97400509471 /* homeTabController.m */; };
 		BA9D3361194539160089516C /* tableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9D3360194539160089516C /* tableViewModel.m */; };
@@ -75,6 +76,8 @@
 		30FFA27C19EB32C0006EA614 /* nearMeDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nearMeDetails.m; sourceTree = "<group>"; };
 		BA25E0FB19FD907400F0BBA4 /* currentUserProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = currentUserProfileTableViewController.h; sourceTree = "<group>"; };
 		BA25E0FC19FD907400F0BBA4 /* currentUserProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = currentUserProfileTableViewController.m; sourceTree = "<group>"; };
+		BA73FF411A06C3D7004B4FD8 /* Colleagues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colleagues.h; sourceTree = "<group>"; };
+		BA73FF421A06C3D7004B4FD8 /* Colleagues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colleagues.m; sourceTree = "<group>"; };
 		BA76328119DB2012008627E5 /* messagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messagesTableViewController.h; sourceTree = "<group>"; };
 		BA76328219DB2012008627E5 /* messagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messagesTableViewController.m; sourceTree = "<group>"; };
 		BA775B8D19D8D97400509471 /* homeTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = homeTabController.h; path = ../homeTabController.h; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				302934F019EB17C000796C28 /* Degree.m */,
 				302BCDFA1A00339900986CF0 /* getCurrentUserLocation.h */,
 				302BCDFB1A00339900986CF0 /* getCurrentUserLocation.m */,
+				BA73FF411A06C3D7004B4FD8 /* Colleagues.h */,
+				BA73FF421A06C3D7004B4FD8 /* Colleagues.m */,
 			);
 			name = "Helper Methods and Classes";
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				30230E6519EC23B5007EA3CD /* currentUserProfileController.m in Sources */,
 				BAAC98D3190DEE7F009D2A7E /* ViewController.m in Sources */,
 				30E8C5E619FCB5B700353096 /* currentUserProfileTableModel.m in Sources */,
+				BA73FF431A06C3D7004B4FD8 /* Colleagues.m in Sources */,
 				BA775B8F19D8D97400509471 /* homeTabController.m in Sources */,
 				BAAC9915190DEFEF009D2A7E /* musicaMatchSignupViewController.m in Sources */,
 				BAAC98CA190DEE7F009D2A7E /* AppDelegate.m in Sources */,

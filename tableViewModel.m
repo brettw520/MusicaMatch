@@ -72,12 +72,10 @@
                     
                     tempUser.objectId = object.objectId;
                     tempUser.username = object [@"username"];
-                   // tempUser.authData = object [@"_authData"];
                     tempUser.phoneNumber = object [@"_additional"];
                     tempUser.instrument= object[@"Instrument"];
-                    tempUser.location = object[@"location"];
-                    //tempUser.userName = object[@"MusicaMatchScore"];
-
+                    tempUser.city = object[@"City"];
+                    tempUser.state = object [@"State"];
                     
                     [self.usersToShow addObject:tempUser];
                         //this adds a parse object to the array: all parse functionality can now be called on each index.
