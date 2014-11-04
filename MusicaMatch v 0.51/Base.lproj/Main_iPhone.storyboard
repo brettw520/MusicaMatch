@@ -182,7 +182,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU8-Xd-TI5">
-                                            <rect key="frame" x="253" y="71" width="59" height="36"/>
+                                            <rect key="frame" x="247" y="70" width="59" height="36"/>
                                             <state key="normal" image="Edit Profile">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
@@ -410,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmT-lZ-D6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-849" y="-930"/>
+            <point key="canvasLocation" x="-1082" y="-1182"/>
         </scene>
         <!--tabBarController-->
         <scene sceneID="VoP-fi-IBC">

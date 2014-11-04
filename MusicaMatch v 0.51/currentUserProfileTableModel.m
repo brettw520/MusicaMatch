@@ -32,6 +32,7 @@
     {
         UIImageView *profilePhoto = [[UIImageView alloc]initWithFrame:CGRectMake(16, 13, 92, 92)];
         profilePhoto.image = [UIImage imageNamed: @"MyProfilePicSpacer.png"];
+        //set the size of ProfilePhoto
         
         
         //add the photo to the array
@@ -41,14 +42,15 @@
     else
     {
         UIImage *profilePhoto = (UIImage *)[PFUser currentUser][@"profileImage"];
+        //set the size of profilePhoto
         
-//set the size
         
         //add the photo to the array
         [_userElements addObject:profilePhoto];
     }
     
     //setup the User's Name label
+    {
     NSString *firstLast = [NSString stringWithFormat:@"%@ %@", (NSString*)[PFUser currentUser][@"firstName"], (NSString*)[PFUser currentUser][@"lastName"]];
 
             //create firstLastLabel
@@ -60,54 +62,56 @@
         #warning set attributes of firstLastLabel including size
             
             [_userElements addObject:firstLastLabel];
+     }
     
     //setup the location label
+    {
     NSString *location= [NSString stringWithFormat:@"%@, %@", [PFUser currentUser][@"City"], [PFUser currentUser][@"State"]];
     
-            //create locationLabel
-            UILabel *locationLabel = [[UILabel alloc]init];
-            locationLabel.text= location;
-            #warning set attributes of locationLabel including size
-            [_userElements addObject:locationLabel];
-            
+    //create locationLabel
+    UILabel *locationLabel = [[UILabel alloc]init];
+    locationLabel.text= location;
+    #warning set attributes of locationLabel including size
+    [_userElements addObject:locationLabel];
+        
+    }
+    
+    //setup the editProfileButton
+    {
+    UIButton *editProfileButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *editProfileImage = [UIImage imageNamed:@"Pencil Icon.png"];
+    [editProfileButton setTitle:@"" forState:UIControlStateNormal];
+    [editProfileButton setBackgroundImage:editProfileImage forState:UIControlStateNormal];
+    editProfileButton.frame = CGRectMake(247, 70, 59, 36);
+    [_userElements addObject:editProfileButton];
     
     
+    }
+        
     NSLog(@"completed setting array");
-    
 }
 
 -(void)setCurrentUserLocation
 {
     _currentLocation =[[getCurrentUserLocation alloc]init];
-    
     _currentLocation.delegate = self; //set the delegate before calling the protocol
-    
     [_currentLocation getUserLocation];
-    
 }
 
-
-
 #pragma mark getCurrentUserLocationDelegate methods
-
 
 -(void)currentUserLocationIsReady
 {
     CLLocation *newLocation =_currentLocation.userLocation;
     PFGeoPoint *tempGeoPoint = [PFGeoPoint geoPointWithLatitude:newLocation.coordinate.latitude longitude:newLocation.coordinate.longitude];
     [PFUser currentUser][@"location"]=tempGeoPoint;
-    //choosing not to save here: want to save everything in 1 saveinbackground message
     
-    //now set up the city name as a parse object
     //reverse geoCoding
-    
     CLGeocoder *geocoder = [[CLGeocoder alloc]init];
-    
     [geocoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray *placemarks, NSError *error)
      {
          if(error==nil && [placemarks count]>0)
          {
-             
              //store string variables with geolocation data
              CLPlacemark *tempPlacemark = [placemarks lastObject];
              NSString *city = [NSString stringWithFormat:@"%@", tempPlacemark.subLocality];
@@ -126,8 +130,6 @@
              NSLog(@"%@", error.debugDescription);
          }
      }];
-    
-    
 }
 
 @end
