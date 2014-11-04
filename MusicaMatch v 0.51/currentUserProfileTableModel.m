@@ -33,7 +33,6 @@
         UIImageView *profilePhoto = [[UIImageView alloc]initWithFrame:CGRectMake(16, 13, 92, 92)];
         profilePhoto.image = [UIImage imageNamed: @"MyProfilePicSpacer.png"];
         
-//set the size
         
         //add the photo to the array
         [_userElements addObject:profilePhoto];
