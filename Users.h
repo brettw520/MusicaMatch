@@ -29,6 +29,7 @@
 @property (nonatomic, strong) NSMutableArray *genresOfInterest;
 @property (nonatomic, strong)NSMutableArray *messagesFromOtherUsers;
 @property (nonatomic, strong)NSMutableArray *messagesToOtherUsers;
+@property (nonatomic, strong) NSString *websiteURL;
 @property (nonatomic,strong)PFGeoPoint *location;
 
 

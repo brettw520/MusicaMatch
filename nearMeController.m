@@ -96,9 +96,11 @@
     UIImage *userImage = (UIImage *) [cell.contentView viewWithTag:0];
     UILabel *usernameLabel = (UILabel *)[cell.contentView viewWithTag:1];
     UILabel *instrumentLabel = (UILabel*)[cell.contentView viewWithTag:2];
+    UILabel *locationLabel = [(UILabel*)cell.contentView viewWithTag:3];
     
-    usernameLabel.text = tableUser.username;
+    usernameLabel.text = tableUser.username;    
     instrumentLabel.text = tableUser.instrument;
+    locationLabel.text = [NSString stringWithFormat:@"%@, %@", tableUser.city, tableUser.state];
     // userImage.imageAsset
     
     

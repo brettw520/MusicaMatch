@@ -59,8 +59,6 @@
     _currentUser.professionalEnsembles = current[@"professionalEsnsembles"];
    
     
-    
-    
     [self confirmUserData];
 
 }
@@ -83,7 +81,7 @@
 
 -(void)confirmUserData
 {
-    NSString *userDataConfirmed =[NSString stringWithFormat:@"first name: %@, last name: %@, instrument: %@, location: %@", _currentUser.firstName, _currentUser.lastName, _currentUser.instrument, _currentUser.location];
+    NSString *userDataConfirmed =[NSString stringWithFormat:@"first name: %@, last name: %@, instrument: %@, city: %@, state: %@", _currentUser.firstName, _currentUser.lastName, _currentUser.instrument, _currentUser.city, _currentUser.state];
     
     NSLog(@"curentUserProfileTableViewController confirms user data:\n%@",userDataConfirmed);
     
@@ -96,21 +94,36 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 3;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    
+    if (section == 0)
+    {
+        return 1;
+    }
+    else if (section ==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 5;
+    }
+    
 }
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"profileData" forIndexPath:indexPath];
     
     // Configure the cell...
     
@@ -162,6 +175,9 @@
 }
 */
 
-- (IBAction)profileShareButton:(id)sender {
+- (IBAction)profileShareButton:(id)sender
+{
+
 }
+    
 @end
